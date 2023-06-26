@@ -1,0 +1,33 @@
+.heading {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.noticias .listado-noticias {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+@media(min-width: 768px) {
+  .noticias .listado-noticias {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.noticias .listado-noticias .card {
+  width: auto;
+  margin: 7px;
+}
+
+.noticias .listado-noticias .card .titulo {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.noticias .listado-noticias .card .img {
+  margin-left: 10px;
+}

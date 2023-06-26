@@ -1,0 +1,21 @@
+<div class="noticias">
+
+  <div class="listado-noticias" *ngIf="listadoDeNoticias.length > 1">
+    <mat-card class="card" *ngFor="let noticia of listadoDeNoticias">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title class="titulo">{{ noticia.title }}</mat-card-title>
+        <mat-card-subtitle class="subtitulo">
+            {{ noticia?.description }}
+            <a [href]="noticia.url">Ver noticia completa</a>
+        </mat-card-subtitle>
+        <img mat-card-lg-image [src]="noticia?.urlToImage" class="img" />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      Autor: {{ noticia.author }}
+    </mat-card-content>
+  </mat-card>
+  </div>
+
+</div>

@@ -1,0 +1,36 @@
+.formulario {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 3px solid grey;
+}
+
+.formulario .heading {
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@media(min-width: 768px) {
+
+  .formulario .heading {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+}
+
+.formulario .form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+@media(min-width: 768px) {
+  .formulario .form {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+}
